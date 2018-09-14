@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Welcome??</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#" class="logo"><s>Eric Zhang</s></a>
+      <ul class="desktopNav">
+        <li class="active"><a href="#projects" class="s">Projects</a></li>
+        <li> <a href="#" class="s">Freelance Work</a></li>
+        <li> <a href="#" class="s">Contact</a></li>
+      </ul>
+      <div class="mobileNav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="mobileNav">
+          <li> <a href="#">Projects</a></li>
+          <li> <a href="#">Freelance Work</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-content">
+      <h1>UX/UI Designer & Web Developer</h1>
+      <p>"Only motiviated web developer will always succeed first..."</p>
+      <div class="btnGroup">
+        <a href="#" class="btn">GET IN TOUCH</a>
+        <div class="whiteBG"></div>
+      </div>
+    </div>
+    <div class="scroll">
+      <div class="line"></div>
+      <p>SCROLL</p>
+    </div>
+  </header>
+
+  <div class="flex-2">
+    <div class="flexItem">
+      <img src="" alt="me" srcset="">
+    </div>
+    <div class="flexItem flexText">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis dolore quaerat dolorem ea ipsum animi
+        sit eveniet provident quos beatae dolor eum voluptatibus perferendis, voluptates dignissimos iure earum
+        veritatis doloremque nihil deleniti? Qui labore quibusdam tempore impedit molestiae quasi, ducimus, consequatur
+        voluptatem odit facere, neque suscipit atque eaque soluta?</p>
+      </h2>
+
+    </div>
+  </div>
+
+
+  <div class="project-section" id="projects">
+
+    <h2>My Work</h2>
+
+    <div class="project-item">
+      <a href="#"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=500&q=60"
+          alt=""></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=500&q=60"
+          alt=""></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=500&q=60"
+          alt=""></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=500&q=60"
+          alt=""></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=500&q=60"
+          alt=""></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=500&q=60"
+          alt=""></a>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    $(document).ready(function () {
+      $('.s').click(function (e) {
+        var linkHref = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(linkHref).offset().top
+        }, 1000);
+        e.preventDefault()
+      });
+    });
+  </script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.logo', {
+      duration: 2000,
+      origin: left
+    });
+    sr.reveal('.desktopNav', {
+      duration: 2000,
+      origin: right
+    });
+    sr.reveal('.header-content', {
+      duration: 2000,
+      origin: bottom
+    });
+    sr.reveal('.scroll', {
+      duration: 2000,
+      origin: top
+    });
+  </script>
+</body>
+
+</html>

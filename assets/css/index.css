@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600,700");
+
+/* Global CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: red;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a6a6a6;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+body {
+  width: 100%;
+  background-image: url("/assets/images/BG_01.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: didot, serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #000;
+}
+
+h2 {
+  font-family: didot, serif;
+  font-size: 46px;
+  color: #000;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  min-height: 900px;
+  width: 100%;
+  padding: 0 5%;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 100px;
+}
+
+nav a:hover {
+  color: #ff416c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.header-content {
+  margin: 250px 0;
+}
+
+.header-content h1 {
+  color: #fff;
+  width: 55%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin: 90px 0 40px 0;
+}
+.header-content p {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.mobileNav {
+  display: none;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 0;
+}
+
+#toggle {
+  display: none;
+}
+
+.mobileNav ul {
+  text-align: center;
+  width: 100%;
+  display: none;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobileNav ul li {
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#toggle:checked ~ ul {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btnGroup {
+  position: relative;
+  z-index: 1;
+}
+.whiteBG {
+  background-color: white;
+  display: block;
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  border-radius: 3px;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1.7%;
+  bottom: 63px;
+  transform: rotate(270deg);
+}
+
+.scroll p {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: (0px 6px 22px 0px rgba(0, 0, 0, 0.08));
+}
+
+.scroll .line {
+  height: 2px;
+  width: 70px;
+  margin-right: 10px;
+  background-color: #fff;
+  box-shadow: (0px 6px 22px 0px rgba(0, 0, 0, 0.08));
+}
+
+/* Main CSS */
+.flex-2 {
+  width: 70%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+}
+
+.flex-2 .flexItem {
+  margin: 50px;
+  flex: 1;
+}
+
+.flex-2 .flexItem img {
+  max-width: 100%;
+}
+
+.flex-2 .flexItem h2 {
+  color: #fff;
+}
+
+.flex-2 .flexItem p {
+  margin: 15px 0 30px 0;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 30px;
+}
+
+.project-section {
+  margin: 15em 0;
+  text-align: center;
+}
+
+.project-section h2 {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.project-item a img {
+  margin: 1%;
+  width: 30%;
+}
+
+/* Footer CSS */
