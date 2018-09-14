@@ -283,7 +283,7 @@ label {
   letter-spacing: 3px;
 }
 
-.project-item a img {
+.project-items a img {
   margin: 1%;
   width: 30%;
 }
@@ -355,7 +355,7 @@ label {
     display: none;
   }
 
-  .project-item a img {
+  .project-items a img {
     margin: 2%;
     width: 96%;
   }
