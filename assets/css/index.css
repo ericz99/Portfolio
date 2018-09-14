@@ -49,6 +49,44 @@ h2 {
   color: #000;
 }
 
+ul {
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+}
+
+li {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+span {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.html {
+  border: 1px solid orange;
+}
+
+.css {
+  border: 1px solid darkblue;
+}
+
+.js {
+  border: 1px solid yellow;
+}
+
+.node {
+  border: 1px solid green;
+}
+
+.react {
+  border: 1px solid blue;
+}
+
 /* Header */
 header {
   height: 100vh;
@@ -223,6 +261,16 @@ label {
   line-height: 30px;
 }
 
+.flexText {
+  text-align: center;
+  margin: 100px 0 200px 0;
+  position: relative;
+}
+
+.flexText h1 {
+  color: #13a3fd;
+}
+
 .project-section {
   margin: 15em 0;
   text-align: center;
@@ -241,3 +289,74 @@ label {
 }
 
 /* Footer CSS */
+
+@media screen and (max-width: 1600px) {
+  .flex-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .flex-2 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .mobileHide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-2 {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 16px;
+  }
+  a {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+
+  .header-content {
+    margin: 0 0 0 5%;
+    padding-top: 150px;
+  }
+
+  header {
+    height: 768px;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  .mobilenav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .project-item a img {
+    margin: 2%;
+    width: 96%;
+  }
+}
